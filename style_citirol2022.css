@@ -1,0 +1,735 @@
+@font-face {
+    font-family: 'Century Gothic Regular';
+    src: url('fonts/CenturyGothic.eot');
+    src: url('fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'), url('fonts/CenturyGothic.woff') format('woff'), url('fonts/CenturyGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic Italic';
+    src: url('fonts/CenturyGothic-Italic.eot');
+    src: url('fonts/CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'), url('fonts/CenturyGothic-Italic.woff') format('woff'), url('fonts/CenturyGothic-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic Bold';
+    src: url('fonts/CenturyGothic-Bold.eot');
+    src: url('fonts/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/CenturyGothic-Bold.woff') format('woff'), url('fonts/CenturyGothic-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Coworking';
+    src: url('fonts/Coworking.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    margin: 0;
+    font-family: 'Century Gothic Regular', sans-serif;
+    font-size: 14pt;
+    color: black;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*img{
+    width: 100%;
+}*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 200px;
+    background: rgba(60, 85, 119, 0.6);
+}
+
+.header__inner {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: ;
+}
+
+.nav {
+    /*display: flex;*/
+    padding: 20px 50px;
+    padding-right: 0;
+    
+}
+
+.nav__link {
+    font-size: 16pt;
+    color: white;
+    text-decoration: none;
+    opacity: 0.75;
+    margin-left: 40px;
+}
+
+.nav__link:first-child {
+    /*margin-left: 0;*/
+}
+
+
+/*ДЛЯ ПОСЛЕДНЕЙ ССЫЛКИ*/
+
+.nav__link:last-child {
+    margin-right: 100px;
+}
+
+
+/*ДЛЯ ПОСЛЕДНЕЙ ССЫЛКИ*/
+
+.nav__link:hover {
+    transition: 0.2s linear;
+    opacity: 1;
+}
+
+.header__logo {
+    padding: 45px;
+    
+}
+
+.header__logo img {
+    width: 100%;
+    max-width: 140px;
+}
+
+html {
+    background: #111 url("../img/ci_tirol_2022/SoloCItirolfestival2022.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.html{
+    background: #111 url("../img/hindurch.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.html_wme{
+    background: #111 url("../img/wme.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.what_is_mmdt{
+    background: black;
+    height: 600px;
+    overflow: hidden;
+
+}
+
+.what_is_mmdt__item {
+     display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+
+}
+
+
+.what_is_mmdt_photo{
+    width: 50%;
+    position: relative;
+}
+
+.what_is_mmdt_content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.what_is_mmdt_text{
+    font-size: 22px;
+    line-height: 1.5;
+    color: white;
+}
+
+.what_is_mmdt__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 600px;
+}
+
+
+
+
+.bio{
+    background: black;
+    display: flex;
+    position: relative;
+}
+.bio__title{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 15px;
+    color: #fff;
+
+}
+
+.bio__img {
+    width: 30%;
+    float: left;
+    margin: 30px;
+    margin-left: 0;
+}
+
+.bio__text{
+    color: #fff;
+    text-align: justify;
+    font-size: 25px;
+    line-height: 1.5;
+
+}
+
+.bio__text a{
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.footer{
+    margin: auto;
+    max-width: 1500px;
+    background: #fff;
+    font-size: 20px;
+    color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+@media(max-width: 500px){
+    .footer{
+    margin: auto;
+    max-width: 1500px;
+    background: #fff;
+    font-size: 20px;
+    color: #000;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+} 
+
+
+
+.footer_element{
+    margin: 20px;
+}
+
+.footer_element:last-child{
+    text-align: right;
+}
+
+
+
+
+/*=============
+
+    PROJECTS
+
+================*/
+
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: white;
+}
+
+.projects_item{
+    padding: 30px;
+}
+
+.projects_item img{
+    width: 100%;
+}
+.projects_item a{
+    opacity: 0.8;
+}
+.projects_item a:hover{
+    opacity: 1;
+}
+
+.intro__witnesing{
+    text-align: center;
+    color: white;
+    font-size: 7vw;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    font-family: 'Coworking';
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 20px;
+}
+
+#Btn{
+    margin-left: 15px;
+    box-shadow: black;
+    width: 200px;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    background: #B3AD9B;
+    color: #fff;
+    cursor: pointer;
+}
+
+#Btn:hover {
+    opacity: 0.7;
+    color: black;
+}
+
+
+.content{
+   margin-top: 100vh;
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+}
+
+.w_inner{
+    width: 50%;
+    line-height: 1.5;
+}
+
+#myBtn {
+    box-shadow: black;
+    width: 300px;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    opacity: 0.7;
+    color: black;
+}
+
+.witnesing_panorama {
+    width: 100%;
+    height: 100vh;
+}
+
+#container{
+    padding: 20PX;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+}
+
+.witnesing_content p, h1{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
+}
+
+
+#back{
+    background: white;
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+    position: relative;
+    color: red;
+}
+
+#back a {
+    text-decoration: none;
+     margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.partners{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.partners img{
+    width: 70%;
+}
+
+#background{
+    position: fixed  ;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.intro{
+    margin-top: 10vh;
+}
+
+
+#title1 {
+  opacity: 0;
+  animation: ani 3s forwards;
+}
+
+#title1 {
+    margin-top: 5vh;
+  opacity: 0;
+  animation: ani 3s forwards;
+}
+
+.title2 {
+  opacity: 0;
+  animation: ani 3s forwards;
+  background: rgba(0, 0, 0, 1.0);
+}
+
+.title3 {
+    
+    color: black;
+  opacity: 0;
+  animation: ani 3s forwards;
+  background: rgba(255, 255, 255, 1.0);
+}
+
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+.teachers{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-column-gap: 50px;
+    align-items: center;
+    text-align: left;
+}
+
+.title_text{
+    font-size: 35px;
+    padding: 0px 20px;
+}
+
+.plain_text{
+    font-size: 18px;
+    padding: 0px HTML20px;
+    text-align: left;
+}
+
+.refund_content p, h1{
+    font-family: 'Montserrat', sans-serif;
+    /*padding: 0 100px;*/
+    line-height: 1.4;
+}
+
+.refund_intro{
+    margin-top: 5vh;
+}
+
+
+.refund_header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 70vh;
+    background: black;
+}
+
+.refund_content{
+   margin-top: 35vh;
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+}
+
+.button{
+    box-shadow: black;
+    width: 300px;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    background: #000;
+    color: #FFF;
+    cursor: pointer;
+    margin: auto;
+}
+
+#btn-back{
+    box-shadow: black;
+    width: 200px;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    background: #2f3d4d;
+    color: #FFF;
+    cursor: pointer;
+    
+}
+
+.covid{
+    padding: 10px;
+    margin: auto;
+    width: 70%;
+    background: white;
+    border: solid;
+    border-color: red;
+    border-radius: 15px;
+}
+
+.html_CI2023{
+    background: #111 url("../gallery/SOLO_CI_TlROL_Fest_2023.png") no-repeat center center fixed;
+    background-size: cover;
+}
+@media(max-width: 650px){
+    .html_CI2023{
+    background: #bbd3de url("../gallery/SOLO_CI_TlROL_Fest_2023_1.png") no-repeat center center fixed;
+    background-size: cover;
+}
+} 
+/* Style the tab */
+.tab-button {
+    box-shadow: black;
+    width: 100%;
+    font-size: 25px;
+    padding: 20px;
+    border: none;
+    border-radius: 7px;
+    background: #7a97c1;
+    color: #000;
+    cursor: pointer;
+    margin: 7px auto;
+}
+
+.tab:last-child{
+    background: #739AA1;
+}
+
+.tab-button:hover{
+    color:#000;
+    background: #f7edd3;
+    transition: 0.3S;
+}
+
+
+a{
+    color: #3c5577;
+}
+
+.org-team{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.ot-elmt{
+    padding: 10px;
+}
+.ot-elmt img{
+    padding: 10px;
+    border-radius: 30px;
+}
+
+@media(max-width: 1300px){
+    .org-team{
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+    }
+} 
+
+@media(max-width: 800px){
+    .org-team{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+} 
+
+.teachers2023{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.tchrs-elmt{
+    padding: 10px;
+}
+.tchrs-elmt img{
+    height: 300px;
+    width: auto;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+@media(max-width: 1300px){
+    .teachers2023{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .tchrs-elmt img{
+        width: auto;
+    }
+} 
+
+@media(max-width: 800px){
+    .teachers2023{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .tchrs-elmt img{
+        height: auto;
+        width: 100%;
+    }
+} 
+
+#description{
+    border-radius: 30px;
+    background: #d8ebf3;
+}
+
+#description p{
+    padding: 0 10px;
+}
+
+#description h3{
+    padding: 0 10px;
+}
+
+.video{
+    width: 100%;
+}
+
+.video div{
+    margin: auto;
+    max-width: 600px;
+}
+
+.pc_ver{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.pc_ver img{
+    border-radius: 25px;
+    padding: 7px;
+}
+
+@media(max-width: 1151px){
+    .pc_ver{
+    display: none;
+    }
+}
+
+@media(min-width: 1150px){
+    .mobile_ver{
+    display: none;
+    }
+}
+
+#myBtn1 {
+    box-shadow: black;
+    width: 300px;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    color: white;
+    background: black;
+}
+
+#myBtn1:hover {
+    opacity: 0.7;
+    color: black;
+}
+
+#food{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.partners1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container {
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-item {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.flex-container img {
+    width: 100%;
+}
