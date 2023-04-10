@@ -1,0 +1,32 @@
+h1{
+	/* Unleash your creativity with case* */
+
+
+	position: absolute;
+	width: 555px;
+	height: 379px;
+	left: 128px;
+	top: 130px;
+
+	font-family: 'Playfair Display';
+	font-style: italic;
+	font-weight: 800;
+	font-size: 103px;
+	line-height: 100px;
+	/* or 97% */
+
+
+	/* Primary */
+
+	color: #0000FF;
+}
+
+
+#Cup{
+	position: absolute;
+	width: 713.89px;
+	height: 584px;
+	left: 438px;
+	top: 200px;
+
+}
