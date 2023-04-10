@@ -14,7 +14,7 @@ h1{
 	width: 555px;
 	height: 379px;
 	left: 128px;
-	top: 130px;
+	top: -30px;
 
 	font-family: 'Playfair Display';
 	font-style: italic;
@@ -35,5 +35,56 @@ h1{
 	width: 713.89px;
 	height: 584px;
 	left: 438px;
-	top: 200px;
+	top: 50px;
+}
+
+
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px;
+	gap: 136px;
+
+/*	position: absolute;*/
+	width: 1024px;
+	height: 106.84px;
+	top: 46px;
+	margin: 0 auto;
+
+}
+
+
+#logo{
+	width: 78.54px;
+	height: 95.34px;
+
+	transform: rotate(-9.36deg);
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.header_inner{
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 27px;
+	text-transform: uppercase;
+
+	/* 25% Black */
+
+	color: rgba(38, 44, 38, 0.25);
+
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 2;
+	flex-grow: 0;
 }
