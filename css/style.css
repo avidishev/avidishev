@@ -29,6 +29,26 @@ h1{
 	color: #0000FF;
 }
 
+p{
+	position: absolute;
+	width: 355px;
+	height: 127px;
+	left: 128px;
+	top: 428px;
+
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* or 150% */
+
+
+	/* 75% Black */
+
+	color: rgba(38, 44, 38, 0.75);
+}
+
 
 #Cup{
 	position: absolute;
