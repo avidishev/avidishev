@@ -1,3 +1,11 @@
+main{
+	position: relative;
+	width: 1280px;
+	background: #FFFFFF;
+	margin: 0 auto;
+}
+
+
 h1{
 	/* Unleash your creativity with case* */
 
