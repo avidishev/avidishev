@@ -1,3 +1,9 @@
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
 .cup{
 	position: relative;
 	width: 1280px;
@@ -81,12 +87,18 @@ header{
 	height: 95.34px;
 
 	transform: rotate(-9.36deg);
-
+	transition: 0.5s;
 	/* Inside auto layout */
 
 	flex: none;
 	order: 0;
 	flex-grow: 0;
+}
+
+#logo:hover{
+	transform: rotate(10deg);
+	scale: 110%;
+
 }
 
 .header_inner{
